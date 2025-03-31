@@ -1,0 +1,298 @@
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(100, 166, 179);
+    width: 100%;
+    background-image: url('img/honeyCombBackground.jpg');
+    background-size: cover; /* Adjust to 'contain' or other values if needed */
+    background-attachment: fixed; /* Keeps it in place while scrolling */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: sticky; top: 0;
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #FFDE73;
+    gap: clamp(2px , 20px, 3%);
+    position: sticky; top: 0;
+    z-index: 100;
+}
+
+.nav-btn {
+    background-color: #FFDE73;
+    width: 200px;
+    height: 90%;
+    cursor: pointer;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 500;
+    font-size: clamp(10px, 1.3rem, 4vw);
+    max-width: 30%;
+    position: relative;
+}
+
+#content {
+    width: 40%;
+    height: 100%;
+}
+
+.contentWrapper {
+    margin-top: 5vh;
+    padding: 5vh;
+    width: 100%;
+    background-color: #FFDE73;
+    border-radius: 2vw;
+
+}
+
+.mainContent {
+    background-color: #FFDE73;;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+
+}
+
+.footer {
+    height: 50px; /* Adjust based on your footer height */
+    background-color: #FFDE73;/* Set footer background color */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 50px; /* Vertically center text */
+    position: relative;
+    top: 10%;
+    right: 100%;
+    width: 110vw;
+    z-index: 10;
+}
+
+
+.header {
+    position: relative;
+    width: 80%;
+    height: 10%;
+    background-color: #FFC60B;
+    clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0% calc(100% - 40px), 0% 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Ensures it stays above the border */
+    box-shadow: 0 0 0 5px white; /* Creates a white border behind */
+    flex-direction: column;
+    margin-bottom: 8vh;
+}
+
+.review-box {
+    position: relative;
+    padding: 1vw;
+    width: 60%;
+    height: 20%;
+    background-color: #FFC60B;
+    clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0% calc(100% - 40px), 0% 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Ensures it stays above the border */
+    box-shadow: 0 0 0 5px white; /* Creates a white border behind */
+    flex-direction: column;
+}
+
+/* Text styles */
+.review-text {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    padding: 1vw;
+    letter-spacing: .5px;
+    line-height: 1.8;
+}
+
+.reviewer {
+    font-weight: bold;
+    margin-left: 2vw;
+    display: block;
+    color: black;
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.workHoursContainer {
+    position: relative;
+    padding: 1vw;
+    width: 60%;
+    height: 20%;
+    background-color: #FFC60B;
+    clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0% calc(100% - 40px), 0% 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Ensures it stays above the border */
+    box-shadow: 0 0 0 5px white; /* Creates a white border behind */
+    flex-direction: column;
+}
+
+.workHoursHeader {
+    font-weight: bold;
+    margin-left: 2vw;
+    display: block;
+    color: black;
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.workHoursText {
+
+}
+
+.workHoursListElement {
+    color: black;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.locationContainer {
+    position: relative;
+    padding: 1vw;
+    width: 60%;
+    height: 10%;
+    background-color: #FFC60B;
+    clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0% calc(100% - 40px), 0% 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Ensures it stays above the border */
+    box-shadow: 0 0 0 5px white; /* Creates a white border behind */
+    flex-direction: column;
+}
+
+.locationHeader {
+    font-weight: bold;
+    margin-left: 2vw;
+    display: block;
+    color: black;
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.locationText {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    padding: 1vw;
+    letter-spacing: .5px;
+    line-height: 1.8;
+}
+
+.itemTypeHeader {
+    position: relative;
+    width: 50%;
+    height: 10%;
+    background-color: #FFC60B;
+    clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0% calc(100% - 40px), 0% 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Ensures it stays above the border */
+    box-shadow: 0 0 0 5px white; /* Creates a white border behind */
+    flex-direction: column;
+    margin-bottom: 8vh;
+    font-size: 1.5rem;
+}
+
+.foodItemContainer {
+    position: relative;
+    padding: 1vw;
+    width: 60%;
+    height: 60vh;
+    background-color: #FFC60B;
+    clip-path: polygon(40px 0%, calc(100% - 40px) 0%, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0% calc(100% - 40px), 0% 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Ensures it stays above the border */
+    box-shadow: 0 0 0 5px white; /* Creates a white border behind */
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+.foodItemHeader {
+    font-weight: bold;
+    margin-left: 2vw;
+    display: block;
+    color: black;
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.foodItemPrice {
+    font-weight: bold;
+    margin-left: 2vw;
+    display: block;
+    color: black;
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.foodItemImage {
+    width: 60%;
+    border: #C16A08 2px solid;
+    border-radius: 2vw;
+}
+
+.honeyDripEffect {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+}
